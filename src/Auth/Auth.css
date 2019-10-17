@@ -1,0 +1,65 @@
+.showModal{
+  display:block;
+  -webkit-animation-name: modalShow; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: modalShow;
+  animation-duration: 2s;  
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes modalShow {
+    from {
+      display: none;
+      opacity: 0;
+      transform: translateY(0);
+    }
+    to {
+      display: block;
+      opacity: 1;
+      transform: translateY(1)
+    }
+}
+
+/* Standard syntax */
+@keyframes modalShow {
+    from {
+      display: none;
+      opacity: 0;
+      transform: translateY(0);
+    }
+    to {
+      display: block;
+      opacity: 1;
+      transform: translateY(1)
+    }
+}
+.Auth {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+    .Auth {
+        width: 500px;
+    }
+}
+
+.errorMessage{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    display: none
+}
+
+.title{
+    color: grey;
+    font-size: 200%;
+    margin-bottom: 5%;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: bold
+
+}

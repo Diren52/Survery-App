@@ -1,0 +1,47 @@
+.Input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.InputElement {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+  	width: 100%;
+  	height: 60px;
+  	background: none;
+  	border: none;
+  	border-bottom: 1px solid #34495e;
+  	outline: none;
+  	font: 300 20px 'Ubuntu', sans-serif;
+  	padding: 20px;
+  	color: #34495e;
+
+}
+
+.InputElement:focus {
+    outline: none;
+    background-color: #ccc;
+}
+
+.Invalid {
+    border-bottom: 1px solid red;
+    background-color: #FDA49A;
+}
+
+.Valid{
+    border-bottom: 2px solid green;
+}

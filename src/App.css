@@ -1,0 +1,229 @@
+.route-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.route-enter.route-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+.button{
+  height: 60px;
+  background: none;
+  font: 700 22px 'Ubuntu', sans-serif;
+  padding: 20px;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #ecf0f1;
+	margin-bottom: 5%
+}
+.formTable{
+    margin-top: 5%;
+  	width: 100%;
+  	height: 60px;
+  	background: none;
+  	border: none;
+  	border-bottom: 1px solid #34495e;
+  	outline: none;
+  	font: 300 20px 'Ubuntu', sans-serif;
+  	padding: 50px;
+  	color: #34495e;
+}
+.formInput{
+  	width: 100%;
+  	height: 60px;
+  	background: none;
+  	border: none;
+  	border-bottom: 1px solid #34495e;
+  	outline: none;
+  	font: 300 25px 'Ubuntu', sans-serif;
+  	padding: 20px;
+  	color: #34495e;
+}
+.showModal{
+  display:block;
+  -webkit-animation-name: modalShow; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: modalShow;
+  animation-duration: 2s;  
+}
+.hideModal{
+  -webkit-animation-name: modalHide; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: modalHide;
+  animation-duration: 2s;  
+  transition: opacity 3s ease;
+  opacity:0;
+  display: none
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes modalShow {
+    from {
+      display: none;
+      opacity: 0;
+      transform: translateY(0);
+    }
+    to {
+      display: block;
+      opacity: 1;
+      transform: translateY(1)
+    }
+}
+
+/* Standard syntax */
+@keyframes modalShow {
+    from {
+      display: none;
+      opacity: 0;
+      transform: translateY(0);
+    }
+    to {
+      display: block;
+      opacity: 1;
+      transform: translateY(1)
+    }
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes modalHide {
+    from {
+      display: block;
+      opacity: 1;
+      transform: translateY(1)
+    }
+    to {
+      display: none;
+      opacity: 0;
+      transform: translateY(0);
+    }
+}
+
+/* Standard syntax */
+@keyframes modalHide {
+    from {
+      display: block;
+      opacity: 1;
+      transform: translateY(1)
+    }
+    to {
+      display: none;
+      opacity: 0;
+      transform: translateY(0);
+    }
+}
+.mustFill{
+  color: red;
+}
+.Link{
+  text-decoration: none;
+  color: #9d9d9d;
+}
+.Link:focus{
+  text-decoration: none !important;
+  color: white !important;   
+}
+.Link:hover{
+  text-decoration: none;
+  color: white;  
+}
+.navbar{
+  margin-bottom: 0;
+}
+.courseName{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	padding: 0 20px;
+	color: #34495e;
+	transition: all .3s ease;
+}
+.countBar{
+  background-color: orange;
+  color: white;
+  height: 20%;
+  padding: 1.5%;
+  margin-top:2%;
+  -webkit-animation-name: showCountBar; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: showCountBar;
+  animation-duration: 2s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes showCountBar {
+    from {
+      width: 5%;
+    }
+    to {
+    }
+}
+
+/* Standard syntax */
+@keyframes showCountBar {
+    from {
+      width: 5%;
+    }
+    to {
+    }
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.Form{
+	width: 100%;
+	height: auto;
+	line-height: 300%;
+	font-size: 20px;
+	padding: 0 20px;
+	color: #34495e;
+	transition: all .3s ease;
+	background: none
+}
+
+.App {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.AppLogo {
+  animation: App-logo-spin infinite 5s alternate;
+  height: 80px;
+}
+
+.AppHeader {
+  background-color: yellow;
+  height: 180px;
+  padding: 20px;
+  color: black;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.AppTitle {
+  font: 700 22px 'Ubuntu', sans-serif;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(-45deg); }
+  to { transform: rotate(45deg); }
+}
